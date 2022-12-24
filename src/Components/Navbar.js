@@ -4,8 +4,9 @@ import PrimaryButton from "../Components/Button/PrimaryButton";
 import { AuthContext } from "../contexts/AuthProvider";
 
 const Navbar = () => {
-  const { user } = useContext(AuthContext);
+  const { user , logout } = useContext(AuthContext);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
 
   return (
     <header className="text-gray-900 body-font shadow-sm">
@@ -43,7 +44,7 @@ const Navbar = () => {
                 {isDropdownOpen && (
                   <div className="absolute right-0 z-20 w-48 py-2 mt-2 bg-white rounded-md shadow-xl ">
                     <Link
-                      to="/Dashboard"
+                      to="/dashboard"
                       className="flex items-center px-3 py-3 text-sm text-gray-600 capitalize transition-colors duration-200 transform  hover:bg-gray-100 "
                     >
                       <svg
@@ -79,7 +80,7 @@ const Navbar = () => {
                         ></path>
                       </svg>
 
-                      <span className="mx-1">Sign Out</span>
+                      <span onClick={logout} className="mx-1">Sign Out</span>
                     </div>
                   </div>
                 )}
