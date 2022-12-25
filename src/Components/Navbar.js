@@ -17,8 +17,8 @@ const Navbar = () => {
         >
           <span className="">
             <img
-              className="w-2/3"
-              src="https://techtocloud.com/wp-content/uploads/2021/02/techtocloud.png"
+              className="w-1/3"
+              src="https://studyin.com.au/wp-content/uploads/2022/11/studyin-web-logo.png"
               alt=""
             />
           </span>
