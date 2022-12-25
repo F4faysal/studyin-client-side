@@ -23,7 +23,7 @@ const BasickTabile = () => {
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
-              <th className="border border-slate-600"
+              <th className="border border-slate-600 p-3"
                 {...column.getHeaderProps()}
                 // style={{
                 //   borderBottom: "solid 3px red",
@@ -46,7 +46,7 @@ const BasickTabile = () => {
               {row.cells.map((cell) => {
                 return (
                   <td
-                  className="border border-slate-700"
+                  className="border border-slate-700 p-3 "
                   // {...cell.getCellProps()}
                   // style={{
                   //   padding: "10px",

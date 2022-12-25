@@ -34,7 +34,7 @@ const SearchCard = () => {
 
         <div className='flex justify-between'>
           <div className='flex gap-1 mt-1'>
-            <StarIcon className='h4 w-4 text-green-500' /> <span>4.8 (10)</span>
+            <StarIcon className='h4 w-4 text-red-500' /> <span>4.8 (10)</span>
           </div>
           <p className='mt-1'>$16 per person</p>
         </div>

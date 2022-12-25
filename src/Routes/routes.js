@@ -3,7 +3,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Dashboard from "../Pages/Dashboard/dashboard";
 import Login from "../Pages/Login/Login";
-import Signup from "../Pages/Login/Signup";
 import ErrorPage from "../Pages/Shared/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 
@@ -21,15 +20,13 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
-      {
-        path: "/signup",
-        element: <Signup />,
-      },
-
+      // {
+      //   path: "/signup",
+      //   element: <Signup />,
+      // },
       {
         path : "/dashboard",
         element : <PrivateRoute><Dashboard/></PrivateRoute>
-
       }
     ],
   },

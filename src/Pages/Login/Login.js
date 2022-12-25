@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import toast from "react-hot-toast";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { setAuthToken } from "../../api/auth";
 import PrimaryButton from "../../Components/Button/PrimaryButton";
 import SmallSpinner from "../../Components/Spinner/SmallSpinner";
@@ -47,7 +47,9 @@ const Login = () => {
     <div className="flex justify-center items-center pt-8   gap-5">
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 bg-gray-100 text-gray-900">
         <div className="mb-8 text-center">
-          <h1 className="my-3 text-4xl font-bold">Sign in</h1>
+          <h1 className="my-3 text-4xl leading-[50px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-black to-red-600">
+            Sign in
+          </h1>
           <p className="text-sm text-gray-400">
             Sign in to access your account
           </p>
@@ -105,11 +107,11 @@ const Login = () => {
           </button>
         </div>
         <div className="flex items-center pt-4 space-x-1">
-          <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
+          <div className="flex-1 h-px sm:w-16 dark:bg-red-700"></div>
           <p className="px-3 text-sm dark:text-gray-400">
             Login with social accounts
           </p>
-          <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
+          <div className="flex-1 h-px sm:w-16 dark:bg-red-700"></div>
         </div>
         <div className="flex justify-center space-x-4">
           <button
@@ -126,16 +128,16 @@ const Login = () => {
             </svg>
           </button>
         </div>
-        <p className="px-6 text-sm text-center text-gray-400">
+        {/* <p className="px-6 text-sm text-center text-gray-400">
           Don't have an account yet?{" "}
           <Link
             to="/signup"
-            className="hover:underline text-green-700 hover:text-secondary font-semibold"
+            className="hover:underline text-red-700 hover:text-secondary font-semibold"
           >
             Sign up
           </Link>
           .
-        </p>
+        </p> */}
       </div>
     </div>
   );

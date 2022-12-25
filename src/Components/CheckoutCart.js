@@ -1,5 +1,5 @@
-import React from 'react'
 import { ArrowRightIcon, StarIcon } from '@heroicons/react/24/solid'
+import React from 'react'
 import { Link } from 'react-router-dom'
 const CheckoutCart = () => {
   let totalNights = 2
@@ -25,7 +25,7 @@ const CheckoutCart = () => {
         </Link>
       </div>
       <div className='flex gap-1 mb-2'>
-        <StarIcon className='h4 w-4 text-green-500' />{' '}
+        <StarIcon className='h4 w-4 text-red-500' />{' '}
         <span>4.8 (10 reviews)</span>
       </div>
 

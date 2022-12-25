@@ -1,6 +1,6 @@
+import { StarIcon } from '@heroicons/react/24/solid'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { StarIcon } from '@heroicons/react/24/solid'
 const ExpCard = () => {
   return (
     <div className='lg:w-1/4 md:w-1/2 p-4 w-full'>
@@ -23,11 +23,11 @@ const ExpCard = () => {
         </h2>
         <p className='mt-1'>$50 per person</p>
         <div className='flex mt-1'>
-          <StarIcon className='h3 w-3 text-green-500' />
-          <StarIcon className='h3 w-3 text-green-500' />
-          <StarIcon className='h3 w-3 text-green-500' />
-          <StarIcon className='h3 w-3 text-green-500' />
-          <StarIcon className='h3 w-3 text-green-500' /> <span>33</span>
+          <StarIcon className='h3 w-3 text-red-500' />
+          <StarIcon className='h3 w-3 text-red-500' />
+          <StarIcon className='h3 w-3 text-red-500' />
+          <StarIcon className='h3 w-3 text-red-500' />
+          <StarIcon className='h3 w-3 text-red-500' /> <span>33</span>
         </div>
       </div>
     </div>
